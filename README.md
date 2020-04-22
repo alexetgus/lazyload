@@ -1,5 +1,6 @@
 # Lazyload
-Lazyloading for images displayed in SMF messages.
+
+Lazy loading for images displayed in SMF messages.
 
 
 ### Description:
@@ -11,4 +12,9 @@ The display of a page thus becomes faster.
 **_This feature is essential for mobile phones that are charged by the amount of data they consume._**
 
 
-**[https://chez-oim.org](https://chez-oim.org)  -  _This mod is copylefted_**  
+For more information on the JavaScript used, please visit the project's Github repository :
+**[https://github.com/aFarkas/lazysizes](https://github.com/aFarkas/lazysizes)**
+
+
+**[https://chez-oim.org](https://chez-oim.org)  -  _This mod is copylefted_**
+To contribute : **[https://github.com/alexetgus/lazyload](https://github.com/alexetgus/lazyload)**

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>alexetgus:Lazyload</id>
+	<version>1.0</version>
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="replace"><![CDATA['content' => '<img src="$1" alt="" class="bbc_img" />',]]></search>
+			<add><![CDATA['content' => '<img data-src="$1" alt="" class="bbc_img lazyload" />',]]></add>
+		</operation>
+
+		<operation>
+			<search position="replace"><![CDATA['content' => '<img src="$1" alt="{alt}"{width}{height} class="bbc_img resized" />',]]></search>
+			<add><![CDATA['content' => '<img data-src="$1" alt="{alt}"{width}{height} class="bbc_img resized lazyload" />',]]></add>
+		</operation>
+	</file>
+		
+	<file name="$themedir/index.template.php">
+		<operation>
+			<search position="replace"><![CDATA[</body></html>';]]></search>
+			<add><![CDATA[	<script src="./Themes/default/scripts/lazysizes.min.js" async=""></script>
+</body></html>';]]></add>
+		</operation>
+	</file>
+</modification>
