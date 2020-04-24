@@ -18,7 +18,7 @@
 	<file name="$themedir/index.template.php">
 		<operation>
 			<search position="replace"><![CDATA[</body></html>';]]></search>
-			<add><![CDATA[	<script src="./Themes/default/scripts/lazysizes.min.js" async=""></script>
+			<add><![CDATA[	<script src="'. $settings['default_theme_url']. '/scripts/lazysizes.min.js" async=""></script>
 </body></html>';]]></add>
 		</operation>
 	</file>
