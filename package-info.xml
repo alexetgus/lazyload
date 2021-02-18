@@ -3,14 +3,14 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>alexetgus:Lazyload</id>
 	<name>Lazyload</name>
-	<version>1.0</version>
+	<version>1.1</version>
 	<type>modification</type>
-	<install for="2.0, 2.0.1 -2.0.17">
+	<install for="2.0, 2.0.1 -2.0.18">
 		<modification format="xml" type="file">Lazyload.xml</modification>
 		<require-file name="lazysizes.min.js" destination="$themedir/scripts" />
 		<readme parsebbc="true">readme-BBC.txt</readme>
 	</install>
-	<uninstall for="2.0, 2.0.1 -2.0.17">
+	<uninstall for="2.0, 2.0.1 -2.0.18">
 		<modification format="xml" type="file" reverse="true">Lazyload.xml</modification>
 		<remove-file name="$themedir/scripts/lazysizes.min.js" />
 		<readme type="inline">This will uninstall the Lazyload</readme>
